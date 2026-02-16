@@ -102,6 +102,8 @@
             box-shadow: 0 15px 20px -10px #1E2F4F40;
             border: 2px solid rgba(47,143,157,0.3);
             transition: 0.2s;
+            display: flex;
+            flex-direction: column;
         }
         .path-item:hover {
             transform: translateY(-5px);
@@ -115,17 +117,14 @@
         .path-item h3 {
             color: #1E2F4F;
             font-size: 1.5rem;
-        }
-        .path-item p {
-            color: #2d3e5c;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
         }
         .detail-list {
             text-align: left;
-            margin-top: 1rem;
+            margin: 1rem 0;
             font-size: 0.85rem;
             list-style: none;
+            flex-grow: 1;
         }
         .detail-list li {
             margin: 0.3rem 0;
@@ -133,6 +132,23 @@
         .detail-list i {
             color: #2F8F9D;
             width: 18px;
+        }
+        .path-button {
+            background: #2F8F9D;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.5rem;
+            transition: 0.1s;
+            border: 1px solid white;
+            box-shadow: 0 4px 0 #195e68;
+        }
+        .path-button:active {
+            transform: translateY(4px);
+            box-shadow: 0 1px 0 #195e68;
         }
 
         /* Karir dan tools */
@@ -323,9 +339,10 @@
         </div>
         <div class="subtitle">Panduan cepat dari pemula hingga profesional</div>
 
-        <!-- Jalur Belajar -->
+        <!-- Jalur Belajar dengan tombol ke masing-masing level -->
         <h2 style="color:#1E2F4F; margin: 2rem 0 1rem;"><i class="fas fa-road"></i> Jalur Belajar (Learning Path)</h2>
         <div class="path-container">
+            <!-- Pemula -->
             <div class="path-item">
                 <div class="path-icon"><i class="fas fa-seedling"></i></div>
                 <h3>Pemula</h3>
@@ -335,7 +352,9 @@
                     <li><i class="fas fa-check"></i> Teks, warna, gambar</li>
                     <li><i class="fas fa-check"></i> Struktur halaman sederhana</li>
                 </ul>
+                <a href="webdesign-pemula.html" class="path-button">Pelajari →</a>
             </div>
+            <!-- Menengah -->
             <div class="path-item">
                 <div class="path-icon"><i class="fas fa-chart-line"></i></div>
                 <h3>Menengah</h3>
@@ -345,7 +364,9 @@
                     <li><i class="fas fa-check"></i> Dasar JavaScript (DOM)</li>
                     <li><i class="fas fa-check"></i> Form & validasi</li>
                 </ul>
+                <a href="webdesign-menengah.html" class="path-button">Pelajari →</a>
             </div>
+            <!-- Lanjut -->
             <div class="path-item">
                 <div class="path-icon"><i class="fas fa-crown"></i></div>
                 <h3>Lanjut</h3>
@@ -355,7 +376,9 @@
                     <li><i class="fas fa-check"></i> Preprocessor (SASS)</li>
                     <li><i class="fas fa-check"></i> SEO dasar</li>
                 </ul>
+                <a href="webdesign-lanjut.html" class="path-button">Pelajari →</a>
             </div>
+            <!-- Mahir -->
             <div class="path-item">
                 <div class="path-icon"><i class="fas fa-rocket"></i></div>
                 <h3>Mahir</h3>
@@ -365,6 +388,7 @@
                     <li><i class="fas fa-check"></i> Kolaborasi dengan backend</li>
                     <li><i class="fas fa-check"></i> Portfolio & networking</li>
                 </ul>
+                <a href="webdesign-mahir.html" class="path-button">Pelajari →</a>
             </div>
         </div>
 
