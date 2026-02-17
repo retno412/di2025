@@ -102,8 +102,6 @@
             box-shadow: 0 15px 20px -10px #1E2F4F40;
             border: 2px solid rgba(47,143,157,0.3);
             transition: 0.2s;
-            display: flex;
-            flex-direction: column;
         }
         .path-item:hover {
             transform: translateY(-5px);
@@ -117,14 +115,17 @@
         .path-item h3 {
             color: #1E2F4F;
             font-size: 1.5rem;
-            margin-bottom: 0.5rem;
+        }
+        .path-item p {
+            color: #2d3e5c;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
         }
         .detail-list {
             text-align: left;
-            margin: 1rem 0;
+            margin-top: 1rem;
             font-size: 0.85rem;
             list-style: none;
-            flex-grow: 1;
         }
         .detail-list li {
             margin: 0.3rem 0;
@@ -132,23 +133,6 @@
         .detail-list i {
             color: #2F8F9D;
             width: 18px;
-        }
-        .path-button {
-            background: #2F8F9D;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            margin-top: 0.5rem;
-            transition: 0.1s;
-            border: 1px solid white;
-            box-shadow: 0 4px 0 #195e68;
-        }
-        .path-button:active {
-            transform: translateY(4px);
-            box-shadow: 0 1px 0 #195e68;
         }
 
         /* Karir dan tools */
@@ -339,10 +323,9 @@
         </div>
         <div class="subtitle">Panduan cepat dari pemula hingga profesional</div>
 
-        <!-- Jalur Belajar dengan tombol ke masing-masing level -->
+        <!-- Jalur Belajar -->
         <h2 style="color:#1E2F4F; margin: 2rem 0 1rem;"><i class="fas fa-road"></i> Jalur Belajar (Learning Path)</h2>
         <div class="path-container">
-            <!-- Pemula -->
             <div class="path-item">
                 <div class="path-icon"><i class="fas fa-seedling"></i></div>
                 <h3>Pemula</h3>
@@ -352,9 +335,7 @@
                     <li><i class="fas fa-check"></i> Teks, warna, gambar</li>
                     <li><i class="fas fa-check"></i> Struktur halaman sederhana</li>
                 </ul>
-                <a href="webdesign-pemula.html" class="path-button">Pelajari →</a>
             </div>
-            <!-- Menengah -->
             <div class="path-item">
                 <div class="path-icon"><i class="fas fa-chart-line"></i></div>
                 <h3>Menengah</h3>
@@ -364,9 +345,7 @@
                     <li><i class="fas fa-check"></i> Dasar JavaScript (DOM)</li>
                     <li><i class="fas fa-check"></i> Form & validasi</li>
                 </ul>
-                <a href="webdesign-menengah.html" class="path-button">Pelajari →</a>
             </div>
-            <!-- Lanjut -->
             <div class="path-item">
                 <div class="path-icon"><i class="fas fa-crown"></i></div>
                 <h3>Lanjut</h3>
@@ -376,9 +355,7 @@
                     <li><i class="fas fa-check"></i> Preprocessor (SASS)</li>
                     <li><i class="fas fa-check"></i> SEO dasar</li>
                 </ul>
-                <a href="webdesign-lanjut.html" class="path-button">Pelajari →</a>
             </div>
-            <!-- Mahir -->
             <div class="path-item">
                 <div class="path-icon"><i class="fas fa-rocket"></i></div>
                 <h3>Mahir</h3>
@@ -388,7 +365,6 @@
                     <li><i class="fas fa-check"></i> Kolaborasi dengan backend</li>
                     <li><i class="fas fa-check"></i> Portfolio & networking</li>
                 </ul>
-                <a href="webdesign-mahir.html" class="path-button">Pelajari →</a>
             </div>
         </div>
 
@@ -397,15 +373,15 @@
             <div class="skills-box">
                 <h2><i class="fas fa-briefcase"></i> Untuk Karir Profesional</h2>
                 <div class="skill-items">
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                    <span class="skill-tag">JavaScript ES6+</span>
-                    <span class="skill-tag">Git/GitHub</span>
+                    <span class="skill-tag"><a href="html.html" style="color:white; text-decoration:none;">HTML5</a></span>
+                    <span class="skill-tag"><a href="css.html" style="color:white; text-decoration:none;">CSS3</a></span>
+                    <span class="skill-tag"><a href="js.html" style="color:white; text-decoration:none;">JavaScript ES6+</a></span>
+                    <span class="skill-tag"><a href="github.html" style="color:white; text-decoration:none;">Git/Github</a></span>
+                    <span class="skill-tag"><a href="figma.html" style="color:white; text-decoration:none;">UI/UX Figma</a></span>
                     <span class="skill-tag">Responsive</span>
-                    <span class="skill-tag">UI/UX Figma</span>
                     <span class="skill-tag">Problem solving</span>
                     <span class="skill-tag">Komunikasi</span>
-                    <span class="skill-tag">React (opsional)</span>
+                    <span class="skill-tag"><a href="react.html" style="color:white; text-decoration:none;">React (opsional) </a></span>
                 </div>
                 <p style="margin-top:1.5rem; background:#e3eef5; padding:0.8rem; border-radius:30px;">💡 Soft skill: adaptasi, berpikir kritis, kolaborasi, manajemen waktu.</p>
             </div>
@@ -417,25 +393,25 @@
                         <h3>🎨 Frontend</h3>
                         <p><strong>Tugas:</strong> tampilan, interaksi, UI/UX.</p>
                         <p><strong>Tools:</strong></p>
-                        <span class="tool-badge">HTML</span>
-                        <span class="tool-badge">CSS</span>
-                        <span class="tool-badge">JavaScript</span>
-                        <span class="tool-badge">React</span>
-                        <span class="tool-badge">Vue</span>
-                        <span class="tool-badge">Bootstrap</span>
-                        <span class="tool-badge">Tailwind</span>
+                        <span class="tool-badge"><a href="html.html" style="color:white; text-decoration:none;">HTML</a></span>
+                        <span class="tool-badge"><a href="css.html" style="color:white; text-decoration:none;">CSS</a></span>
+                        <span class="tool-badge"><a href="js.html" style="color:white; text-decoration:none;">JavaScript</a></span>
+                        <span class="tool-badge"><a href="react.html" style="color:white; text-decoration:none;">React</a></span>
+                        <span class="tool-badge"><a href="vue.html" style="color:white; text-decoration:none;">Vue</a></span>
+                        <span class="tool-badge"><a href="bootstrap.html" style="color:white; text-decoration:none;">Bootstrap</a></span>
+                        <span class="tool-badge"><a href="tailwind.html" style="color:white; text-decoration:none;">Tailwind</a></span>
                     </div>
                     <div class="be-box">
                         <h3>⚙️ Backend</h3>
                         <p><strong>Tugas:</strong> server, database, API, logika bisnis.</p>
                         <p><strong>Tools:</strong></p>
-                        <span class="tool-badge">Node.js</span>
-                        <span class="tool-badge">PHP</span>
-                        <span class="tool-badge">Python</span>
-                        <span class="tool-badge">MySQL</span>
-                        <span class="tool-badge">Laravel</span>
-                        <span class="tool-badge">Express</span>
-                        <span class="tool-badge">MongoDB</span>
+                        <span class="tool-badge"><a href="nodejs.html" style="color:white; text-decoration:none;">Node.js</a></span>
+                        <span class="tool-badge"><a href="php.html" style="color:white; text-decoration:none;">PHP</a></span>
+                        <span class="tool-badge"><a href="python.html" style="color:white; text-decoration:none;">Python</a></span>
+                        <span class="tool-badge"><a href="mysql.html" style="color:white; text-decoration:none;">MySQL</a></span>
+                        <span class="tool-badge"><a href="laravel.html" style="color:white; text-decoration:none;">Laravel</a></span>
+                        <span class="tool-badge"><a href="express.html" style="color:white; text-decoration:none;">Express</a></span>
+                        <span class="tool-badge"><a href="mongodb.html" style="color:white; text-decoration:none;">MongoDB</a></span>
                     </div>
                 </div>
                 <p style="margin-top:1.2rem; background:#f7d44b30; padding:0.5rem; border-radius:30px; text-align:center;">✨ Full-stack menguasai keduanya!</p>
